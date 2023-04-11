@@ -1,22 +1,11 @@
-function calculo() {
-    var valor = parseFloat(document.getElementById("valor").value);
-    var converter = document.getElementById("converter").value;
-    var resultado;
+function Converter() {
+    var valorCotacao = document.getElementById("cotacao").value;
+    var valorDolar = document.getElementById("valor").value;
 
-    switch (converter) {
-        case "euro":
-            resultado = 5.46
-            break;
-        case "dolar":
-            resultado =  5.01
-            break;
-        case "libra":
-            resultado =  6.21
-            break;
-    }
+    var valorEmReais = valorDolar * valorCotacao
+    var valorEmReais = valorEmReais.toFixed(2)
 
     var elementoValorConvertido = document.getElementById("valorConvertido")
     var valorConvertido = "O resultado em real é R$" + valorEmReais
     elementoValorConvertido.innerHTML = valorConvertido
-
 }

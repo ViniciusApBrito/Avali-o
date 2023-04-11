@@ -1,45 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Conversor de moedas</title>s
+    <script src="script.js"></script>
+    <title>Conversor de Moedas</title>
 </head>
 
 <body>
-<div class="container">
-    <input type="text" id="valor"placeholder="Digite o valor">
-    <input type="text" id = "dolar">
-    <input type="text" id = "euro">
-    <input type="text" id = "libras">
-    <input type="text" id = "valor">
-
-
-    <button type="button" onclick= "calculo()"></button>
-
-    <h3 id="valorConvertido"></h3>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <div class="container">
+        <link rel="stylesheet" href="css/style.css">
+        <h1 class="page-title">
+            Conversor de moedas
+        </h1>
+        <p class="page-subtitle">
+            Descubra o valor de dólares em real R$!
+        </p>
+        <label for="moeda">Insira a cotação</label><br>
+        <input type="number" id="dolar" size="2" /><br>
+        <input type="number" id="libra" size="2" /><br>
+        <input type="number" id="euro" size="2" /><br>
+        <label for="moeda">Insira o valor em dólares</label><br>
+        <input type="number" id="valor" size="2" /><br>
+        <button type="submit" onclick="Converter()">Converter</button>
+        <h3 id="valorConvertido"></h3>
+        <hr>
+        <footer>
+            <h6>
+                Conversor de moedas desenvolvido por Vitória de Valois, no projeto <i>Imersao Dev</i> da <a
+                    href="https://www.alura.com.br/">Alura</a> (14/09/21).
+        </footer>
+    </div>
 </body>
 
 </html>
