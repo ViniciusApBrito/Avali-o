@@ -1,4 +1,22 @@
-#titulo{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+    background-color: rgb(253, 249, 249);
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.2);
+    background-color: rgb(161, 193, 230);
+  }
+  
+.titulo{
+    color: white;
+}
+
+.textos{
+    color: white;
+    font-style: italic;
 }
 
