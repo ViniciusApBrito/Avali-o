@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +7,28 @@
     <script src="script.js"></script>
     <title>Conversor de Moedas</title>
 </head>
-
 <body>
     <div class="container">
-        <link rel="stylesheet" href="css/style.css">
-        <h1 class="page-title">
-            Conversor de moedas
-        </h1>
-        <p class="page-subtitle">
-            Descubra o valor de dólares em real R$!
-        </p>
-        <label for="moeda">Insira a cotação</label><br>
-        <input type="number" id="dolar" size="2" /><br>
-        <input type="number" id="libra" size="2" /><br>
-        <input type="number" id="euro" size="2" /><br>
-        <label for="moeda">Insira o valor em dólares</label><br>
-        <input type="number" id="valor" size="2" /><br>
-        <button type="submit" onclick="Converter()">Converter</button>
-        <h3 id="valorConvertido"></h3>
-        <hr>
-        <footer>
-            <h6>
-                Conversor de moedas desenvolvido por Vitória de Valois, no projeto <i>Imersao Dev</i> da <a
-                    href="https://www.alura.com.br/">Alura</a> (14/09/21).
-        </footer>
-    </div>
+    <link rel="stylesheet" href="css/style.css">
+    <h1 class="page-title">
+      Conversor de moedas
+    </h1>
+    <p class="page-subtitle">
+      Descubra o valor em real R$!
+    </p>
+    <label for="moeda">Insira a cotação do dólar</label><br>
+    <input type="number" id="dolar" size="2" placeholder="Digite cotação dolar" /><br>
+    <input type="number" id="euro" size="2" /><br>
+    <input type="number" id="libra" size="2" /><br>
+    <label for="moeda">Insira o valor</label><br>
+    <input type="number" id="valor" size="2" /><br>
+    <button type="submit" onclick="Converter()">Converter</button>
+    <h3 id="valorConvertido"></h3>
+    <h3 id="valorConvertido2"></h3>
+    <h3 id="valorConvertido3"></h3>
+  
+  
+  </div>
 </body>
 
 </html>
