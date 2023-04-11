@@ -5,30 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Conversor de Moedas</title>
 </head>
 <body>
     <div class="container">
-    <link rel="stylesheet" href="css/style.css">
+      <div class="container-fluid bg-body-secondary text-center">
     <h1 class="page-title">
       Conversor de moedas
     </h1>
     <p class="page-subtitle">
-      Descubra o valor em real R$!
+      Conversor de real para:
     </p>
-    <label for="moeda">Insira a cotação do dólar</label><br>
+  
     <input type="number" id="dolar" size="2" placeholder="Digite cotação dolar" /><br>
-    <input type="number" id="euro" size="2" /><br>
-    <input type="number" id="libra" size="2" /><br>
-    <label for="moeda">Insira o valor</label><br>
+    <br>
+    <input type="number" id="euro" size="2" placeholder="Digite cotação euro"/><br>
+    <br>
+    <input type="number" id="libra" size="2" placeholder="Digite cotação libra"/><br>
+    <br>
     <input type="number" id="valor" size="2" /><br>
+    <br>
     <button type="submit" onclick="Converter()">Converter</button>
-    <h3 id="valorConvertido"></h3>
-    <h3 id="valorConvertido2"></h3>
-    <h3 id="valorConvertido3"></h3>
-  
-  
+    <h3 id="Libra"></h3>
+    <h3 id="Euros"></h3>
+    <h3 id="Dolares"></h3>
   </div>
+</div>
 </body>
 
 </html>
